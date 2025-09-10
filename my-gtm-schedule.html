@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weekly Gym Plan Poster (1920×1080)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg1: #0f172a; --bg2: #1e293b;
+    --card: #0b1220cc; --text: #e2e8f0; --muted: #94a3b8;
+    --green: #22c55e; --sky: #38bdf8; --amber: #f59e0b;
+  }
+  html, body { margin:0; padding:0; background:#000; color:var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+  /* Exact 1920×1080 canvas */
+  #poster {
+    width:1920px; height:1080px; margin:0 auto; position:relative; overflow:hidden;
+    background: radial-gradient(1200px 700px at 25% 20%, #1f2937 0%, #0f172a 60%, #0a0f1c 100%),
+                linear-gradient(135deg, var(--bg1), var(--bg2));
+    box-shadow: 0 0 40px rgba(0,0,0,0.6) inset;
+  }
+  header {
+    position:absolute; left:40px; right:40px; top:28px;
+    display:flex; align-items:baseline; justify-content:space-between;
+  }
+  .title { font-weight:800; font-size:46px; letter-spacing:.5px;
+    background:linear-gradient(90deg, #e2e8f0, #a7f3d0);
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .subtitle { font-size:18px; color:var(--muted); }
+
+  .grid {
+    position:absolute; left:40px; right:40px; top:100px; bottom:40px;
+    display:grid; gap:14px;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 0.75fr;
+  }
+  .card {
+    background: linear-gradient(180deg, #0b1220e6, #0b1220cc);
+    border:1px solid rgba(148,163,184,0.18); border-radius:14px;
+    padding:12px 14px; display:flex; flex-direction:column; gap:6px;
+    backdrop-filter: blur(6px);
+  }
+  .card h2 { margin:0; font-size:20px; letter-spacing:.3px; display:flex; align-items:center; gap:8px; }
+  .tag { font-size:12px; padding:2px 8px; border-radius:999px;
+    background: rgba(56,189,248,0.08); color:#7dd3fc; border:1px solid rgba(56,189,248,0.25); }
+  .tag.green { background: rgba(34,197,94,0.08); color:#86efac; border-color: rgba(34,197,94,0.25); }
+  .tag.amber { background: rgba(245,158,11,0.10); color:#fbbf24; border-color: rgba(245,158,11,0.28); }
+
+  .section { margin-top:4px; background:rgba(148,163,184,0.06); border:1px dashed rgba(148,163,184,0.25); border-radius:10px; padding:8px; }
+  .section h3 { margin:0 0 6px 0; font-size:14px; color:#cbd5e1; letter-spacing:.2px; display:flex; align-items:center; gap:6px; }
+  .list { display:grid; grid-auto-rows:min-content; gap:4px; }
+  .item { display:flex; align-items:center; gap:8px; font-size:14px; color:#e5e7eb; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .icon { width:20px; text-align:center; }
+  .muted { color:var(--muted); font-size:13px; }
+  .foot { margin-top:auto; font-size:12px; color:var(--muted); display:flex; justify-content:space-between; align-items:center; }
+  .note { color:#7dd3fc; }
+  .accent { color:#86efac; }
+
+  .sunday { grid-column:1/4; }
+</style>
+</head>
+<body>
+<div id="poster" role="img" aria-label="Weekly Gym Plan Poster 1920 by 1080">
+
+  <header>
+    <div class="title">Weekly Gym Plan</div>
+    <div class="subtitle">Full HD 1920×1080 • Icons for every exercise • Warm‑up / Workout / Core / Cool‑down</div>
+  </header>
+
+  <div class="grid">
+    <!-- Monday -->
+    <section class="card">
+      <h2>🏋️ Monday <span class="tag">Upper • Push</span></h2>
+      <div class="section">
+        <h3>Warm‑up • 10 min</h3>
+        <div class="item"><span class="icon">🏃</span>Light treadmill jog or cycle</div>
+      </div>
+      <div class="section">
+        <h3>Workout</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🏋️</span>Bench Press (or Dumbbell Press) – 4 × 8–12</div>
+          <div class="item"><span class="icon">💪</span>Overhead Shoulder Press – 4 × 10–12</div>
+          <div class="item"><span class="icon">🏋️</span>Incline Dumbbell Press – 3 × 10–12</div>
+          <div class="item"><span class="icon">👐</span>Lateral Raises – 3 × 15</div>
+          <div class="item"><span class="icon">↘️</span>Triceps Dips (or Cable Pushdown) – 3 × 12–15</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Core</h3>
+        <div class="item"><span class="icon">🤸</span>Plank – 3 × 1 min</div>
+      </div>
+      <div class="foot"><span>Cool‑down & Stretching • 10 min</span><span class="note">Form first • Control tempo</span></div>
+    </section>
+
+    <!-- Tuesday -->
+    <section class="card">
+      <h2>🏋️ Tuesday <span class="tag green">Lower • Strength</span></h2>
+      <div class="section">
+        <h3>Warm‑up • 10 min</h3>
+        <div class="item"><span class="icon">🚴</span>Stationary bike or light jogging</div>
+      </div>
+      <div class="section">
+        <h3>Workout</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🦵</span>Squats (Barbell or Dumbbell) – 4 × 8–12</div>
+          <div class="item"><span class="icon">🦿</span>Leg Press – 3 × 12</div>
+          <div class="item"><span class="icon">🏋️</span>Romanian Deadlifts (light or DB for form) – 3 × 10</div>
+          <div class="item"><span class="icon">🚶</span>Lunges – 3 × 12 each leg</div>
+          <div class="item"><span class="icon">🦶</span>Calf Raises – 4 × 15</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Core</h3>
+        <div class="item"><span class="icon">🧗</span>Hanging Leg Raises – 3 × 12–15</div>
+      </div>
+      <div class="foot"><span>Cool‑down & Stretching • 10 min</span><span class="note">Depth • Neutral spine</span></div>
+    </section>
+
+    <!-- Wednesday -->
+    <section class="card">
+      <h2>🏃 Wednesday <span class="tag amber">Cardio + Core</span></h2>
+      <div class="section">
+        <h3>Cardio • 30–40 min</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🏃</span>Treadmill at moderate intensity</div>
+          <div class="item"><span class="icon">🚴</span>Elliptical or Cycle</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Core Workout</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🤸</span>Plank – 3 × 1 min</div>
+          <div class="item"><span class="icon">🌀</span>Russian Twists – 3 × 20</div>
+          <div class="item"><span class="icon">🚲</span>Bicycle Crunches – 3 × 20</div>
+          <div class="item"><span class="icon">🪓</span>Cable Woodchoppers – 3 × 15 per side</div>
+        </div>
+      </div>
+      <div class="foot"><span>Cool‑down & Stretching • 10 min</span><span class="note">Steady breathing • RPE ~6</span></div>
+    </section>
+
+    <!-- Thursday -->
+    <section class="card">
+      <h2>🏋️ Thursday <span class="tag">Upper • Pull</span></h2>
+      <div class="section">
+        <h3>Warm‑up • 10 min</h3>
+        <div class="item"><span class="icon">🏃</span>Light cardio</div>
+      </div>
+      <div class="section">
+        <h3>Workout</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🧗</span>Pull‑Ups (Assisted if needed) – 4 × 8–10</div>
+          <div class="item"><span class="icon">↔️</span>Barbell or Dumbbell Rows – 4 × 10</div>
+          <div class="item"><span class="icon">⬇️</span>Lat Pulldown – 3 × 12</div>
+          <div class="item"><span class="icon">🎯</span>Face Pulls – 3 × 15</div>
+          <div class="item"><span class="icon">💪</span>Biceps Curl (Barbell/Dumbbell/Cable) – 3 × 12–15</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Core</h3>
+        <div class="item"><span class="icon">🧵</span>Cable Crunch – 3 × 15</div>
+      </div>
+      <div class="foot"><span>Cool‑down & Stretching • 10 min</span><span class="note">Squeeze back • Full ROM</span></div>
+    </section>
+
+    <!-- Friday -->
+    <section class="card">
+      <h2>🏋️ Friday <span class="tag green">Lower + Functional</span></h2>
+      <div class="section">
+        <h3>Warm‑up • 10 min</h3>
+        <div class="item"><span class="icon">🤸</span>Dynamic stretching + light cardio</div>
+      </div>
+      <div class="section">
+        <h3>Workout</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🦿</span>Leg Press – 4 × 12</div>
+          <div class="item"><span class="icon">🪜</span>Step‑Ups with Dumbbells – 3 × 12</div>
+          <div class="item"><span class="icon">🍑</span>Glute Bridges – 3 × 15</div>
+          <div class="item"><span class="icon">🔔</span>Kettlebell Swings – 3 × 20</div>
+          <div class="item"><span class="icon">🧍</span>Bodyweight Squats – 3 × 20</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Core</h3>
+        <div class="item"><span class="icon">🧗</span>Hanging Knee Raises – 3 × 15</div>
+      </div>
+      <div class="foot"><span>Cool‑down & Stretching • 10 min</span><span class="note">Hips back • Flat back</span></div>
+    </section>
+
+    <!-- Saturday -->
+    <section class="card">
+      <h2>🏃 Saturday <span class="tag amber">Cardio + Core + Recovery</span></h2>
+      <div class="section">
+        <h3>Cardio • 30–45 min</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🏃</span>Elliptical, Cycling, or Brisk Walking</div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Core Focus</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🤸</span>Plank Variations – 3 × 1 min</div>
+          <div class="item"><span class="icon">↔️</span>Side Plank – 3 × 30 s each side</div>
+          <div class="item"><span class="icon">🔄</span>Reverse Crunch – 3 × 15</div>
+        </div>
+      </div>
+      <div class="foot"><span>Optional: 15–20 min light stretching or yoga</span><span class="note">Keep it easy • Restore</span></div>
+    </section>
+
+    <!-- Sunday -->
+    <section class="card sunday">
+      <h2>✅ Sunday <span class="tag">Rest / Light Activity</span></h2>
+      <div class="section">
+        <h3>Active Options</h3>
+        <div class="list">
+          <div class="item"><span class="icon">🚶</span>Walk</div>
+          <div class="item"><span class="icon">🧘</span>Light yoga or mobility</div>
+          <div class="item"><span class="icon">🤸</span>Stretching</div>
+        </div>
+      </div>
+      <div class="foot"><span class="muted">Recovery, hydration, sleep</span><span class="accent">Reset for Monday</span></div>
+    </section>
+
+  </div>
+</div>
+</body>
+</html>
